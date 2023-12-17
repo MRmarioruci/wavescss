@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https: //fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins&display=swap');
+@import "partials/vars";
+@import "partials/buttons";
+@import "partials/forms";
+@import "partials/typography";
+@import "partials/helpers";
+@import "partials/table";
+@import "partials/misc";
+@import "partials/dropdown";
+@import "partials/tabs";
+@import "partials/modal";
+@import "partials/loader";
+@import "partials/cards";
+@import "partials/menu";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	font-size: 15px;
+	scroll-behavior: smooth;
+
+	::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+	
+	/* Handle (the draggable part) */
+	::-webkit-scrollbar-thumb {
+		background-color: RGBA(var(--textColor-rgb) / 80%);
+		border-radius: 6px;
+	}
+	
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background-color: var(--textColor);
+	}
+	
+	/* Track (the area on which the handle moves) */
+	::-webkit-scrollbar-track {
+		background-color: var(--background);
+	}
+	
+	/* Track on hover */
+	::-webkit-scrollbar-track:hover {
+		background-color: var(--secondary);
+	}
+}
+
+body {
+	font-family: var(--fontFamily);
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	background: var(--background);
+	color: var(--textColor);
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0rem;
+	margin: 0rem;
+	font-weight: normal;
+}
+
+span {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
